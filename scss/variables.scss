@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'poppinsbold';
+    src: url('../webfonts/poppins-bold-webfont.woff2') format('woff2'),
+         url('../webfonts/poppins-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'poppinsmedium';
+    src: url('../webfonts/poppins-medium-webfont.woff2') format('woff2'),
+         url('../webfonts/poppins-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'poppinsregular';
+    src: url('../webfonts/poppins-regular-webfont.woff2') format('woff2'),
+         url('../webfonts/poppins-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* fallback */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../webfonts/material-icon.woff2') format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -moz-font-feature-settings: 'liga';
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*-------------------------------------------
+------------Font Family----------------------
+-------------------------------------------*/
+
+$reguler:'poppinsregular';
+$medium:'poppinsmedium';
+$bold:'poppinsbold';
+
+
+/*------------------------------------------
+------------Font Size-----------------------
+-------------------------------------------*/
+
+$f8:8px;
+$f9:9px;
+$f10:10px;
+$f11:11px;
+$f12:12px;
+$f13:13px;
+$f14:14px;
+$f15:15px;
+$f16:16px;
+$f17:17px;
+$f18:18px;
+$f19:19px;
+$f20:20px;
+$f21:21px;
+$f22:22px;
+$f23:23px;
+$f24:24px;
+$f25:25px;
+$f26:26px;
+$f27:27px;
+$f28:28px;
+$f29:29px;
+$f30:30px;
+$f31:31px;
+$f32:32px;
+$f33:33px;
+$f34:34px;
+$f35:35px;
+$f36:36px;
+$f37:37px;
+$f38:38px;
+$f39:39px;
+$f40:40px;
+$f41:41px;
+$f42:42px;
+$f43:43px;
+$f44:44px;
+$f45:45px;
+$f46:46px;
+$f47:47px;
+$f48:48px;
+$f49:49px;
+$f50:50px;
+$f51:51px;
+$f52:52px;
+$f53:53px;
+$f54:54px;
+$f55:55px;
+$f56:56px;
+$f57:57px;
+$f58:58px;
+$f59:59px;
+$f60:60px;
+$f61:61px;
+$f62:62px;
+$f63:63px;
+$f64:64px;
+$f65:65px;
+$f66:66px;
+$f67:67px;
+$f68:68px;
+$f69:69px;
+$f70:70px;
+$f80:80px;
+$f90:90px;
+$f100:100px;
+
+/*------------------------------------------
+------------Font Weight---------------------
+-------------------------------------------*/
+
+
+$font-weight-light:300;
+$font-weight-regular:400;
+$font-weight-bold:600;
+
+
+/*------------------------------------------
+------------Colors--------------------------
+-------------------------------------------*/
+
+$white: #fff;
+$black: #000;
+$black1: #222;
+$lightdark: #454545;
+$lightbg: #f9f9f9;
+$purple: #7c4fe0;
+
