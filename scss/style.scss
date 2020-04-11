@@ -4,6 +4,7 @@
 
 header{
     .navbar{box-shadow: none; padding: 1.7rem 1rem; transition: all 0.5s ease-in-out !important;
+        .navbar-brand{font-family: $medium;}
         &.shrink{background-color: $white; padding: 1rem 1rem; box-shadow: 0 10px 33px rgba(0, 0, 0, 0.1);
             .navbar-brand{color: $black1;}
             .nav-item{
@@ -44,9 +45,9 @@ header{
 ---------------------------------Home-banner---------------------------
 ----------------------------------------------------------------------*/
 .home-banner{ position: relative; background-image: url("../img/home-bg.jpg"); width: 100%; height: 650px;
-background-position: center top;background-size: cover;background-repeat: no-repeat; z-index: -3;
+background-position: center top;background-size: cover;background-repeat: no-repeat; z-index: 0;
     &:after{position: absolute; width: 100%; height: 100%; left: 0; top: 0;
-      opacity: 0.8; z-index: -2; @extend .gradient_one;}
+      opacity: 0.9; z-index: -2; @extend .gradient_one;}
 
      /*article{ @include center;
         figure{width: 175px; height: 175px; border-radius: 50%; display: block; overflow: hidden;
@@ -70,10 +71,10 @@ background-position: center top;background-size: cover;background-repeat: no-rep
 
 
 
-.about-us-sec{ margin-top: -100px;
+.about-us-sec{ margin-top: -100px; position: relative;
     .container{max-width: 1000px; display: flex; background-color: $white; @extend .box_shadow_1; padding: 0;
         figure{flex : 0 0 400px; overflow: hidden; height: 534px;
-            img{object-fit: cover; object-position: center;}
+            img{object-fit: cover; object-position: center; width: 100%; height: 100%;}
         }
         figcaption{ flex: 1; padding: 50px 40px;
             h3{font-family: $bold; color: $purple; font-size: $f36; margin-bottom: 10px;}
@@ -97,7 +98,7 @@ background-position: center top;background-size: cover;background-repeat: no-rep
 }
 .section-padding{padding: 80px 0;}
 
-.hobbies-sec .container{width: 1000px;}
+.hobbies-sec .container{max-width: 1000px;}
 .skill-boxes{
     .col-md-3{margin-bottom: 30px;}
 }
@@ -106,7 +107,8 @@ background-position: center top;background-size: cover;background-repeat: no-rep
     .icon{display: block; text-align: center;
         i{font-size: $f32; @extend .transition;}
     }
-    span{font-size: $f16; font-family: $medium; color: $lightdark; @extend .transition;}
+    span{font-size: $f16; font-family: $medium; color: $lightdark; @extend .transition; display: block;
+     margin-bottom: 9px;}
     &:hover{ transform: translateY(-10px); box-shadow: 0px 1px 14px rgba(47, 83, 151, 0.2);
         .icon{
             i{color: $purple;}
@@ -228,25 +230,29 @@ background-position: center top;background-size: cover;background-repeat: no-rep
 }
 
 
-footer{ background-color: #0f0f0f;
+footer{ @extend .gradient_one;
     .contact-box{
-        h4{font-size: $f22; margin-bottom: 30px; color: $purple;}
+        h4{font-size: $f22; margin-bottom: 30px; color: $white; font-family: $medium;}
         ul{
             li{ margin-bottom: 0.5rem;
                 &:last-child{margin-bottom: 0;}
                 a{font-size: $f15; line-height: 30px; padding-left: 30px; position: relative; display: block;
                     color: $white;
                     i{position: absolute; left: 0; top: 50%; transform: translateY(-50%); font-size: $f18;
-                        color: $purple;}
+                        color: $white;}
                 }
             }
         }
     }
     .footer-info{
-        h4{font-size: $f24; margin-bottom: 32px; color: $purple; font-family: $bold;}
+        h4{font-size: $f24; margin-bottom: 32px; color: $white; font-family: $bold;}
         p{font-size: $f14; max-width: 70%; margin-bottom: 30px; color: $white;}
     }
 }
+
+
+
+
 
 
 

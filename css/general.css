@@ -282,7 +282,7 @@ header:after, header:before, footer:after, footer:before, section:after, section
   text-align: center;
   text-transform: capitalize;
   font-size: 16px !important;
-  color: #222;
+  color: #262626;
   margin: 0;
   box-shadow: none;
   background: linear-gradient(-47deg, #8731E8 0%, #4528DC 100%);
