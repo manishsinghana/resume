@@ -4,7 +4,10 @@
 
 header{
     .navbar{box-shadow: none; padding: 1.7rem 1rem; transition: all 0.5s ease-in-out !important;
-        .navbar-brand{font-family: $medium;}
+        .nav-item{
+                .nav-link{color: $white !important;}
+            }
+        .navbar-brand{font-family: $medium; color: $white;}
         &.shrink{background-color: $white; padding: 1rem 1rem; box-shadow: 0 10px 33px rgba(0, 0, 0, 0.1);
             .navbar-brand{color: $black1;}
             .nav-item{

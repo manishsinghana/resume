@@ -327,8 +327,12 @@ header .navbar {
   padding: 1.7rem 1rem;
   transition: all 0.5s ease-in-out !important;
 }
+header .navbar .nav-item .nav-link {
+  color: #fff !important;
+}
 header .navbar .navbar-brand {
   font-family: "poppinsmedium";
+  color: #fff;
 }
 header .navbar.shrink {
   background-color: #fff;
