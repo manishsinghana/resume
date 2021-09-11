@@ -26,7 +26,7 @@
     <div class="wrapper">
         <header class="">
             <!--Navbar-->
-            <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top main-navigation">
                 <div class="container">
                     <!-- Navbar brand -->
                     <a class="navbar-brand" href="#">MANISH</a>
@@ -595,7 +595,7 @@
         });
     })
     </script>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
     (function($) {
         "use strict"; // Start of use strict
 
@@ -609,6 +609,23 @@
         });
 
     })(jQuery); // End of use strict
+    </script> -->
+    <script type="text/javascript">
+    $(document).ready(function() {
+        jQuery('.main-navigation .nav-link').each(function() {
+            jQuery(this).on('click', function() {
+                event.preventDefault();
+                var hash = this.hash;
+
+                jQuery('.main-navigation .nav-link').parent('li').removeClass('active');
+                jQuery(this).parent('li').addClass('active');
+
+                jQuery('html, body').animate({
+                    scrollTop: jQuery(hash).offset().top
+                }, 800, 'swing');
+            })
+        });
+    })
     </script>
 </body>
 
